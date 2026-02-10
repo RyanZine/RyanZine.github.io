@@ -1,0 +1,209 @@
+/*fonte de letra*/
+.cinzel-decorative-regular {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.cinzel-decorative-bold {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.cinzel-decorative-black {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body{
+    margin: 10px;
+    padding: 12px;
+    box-sizing: border-box;
+    font-family: 'Cinzel Decorative', serif;
+    background-image: url("BrasaViva/background2.jpg");/*fundo de fogo*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+    width: auto;
+    background-position: center;
+    background-color: black;
+    text-decoration: none;
+    color: #ffe5b4;
+}
+/*Header*/
+header{
+    text-align: center;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+/*Menu*/
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 10px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    margin: 0 15px;
+}
+a:hover {
+    color: #ffae0d;
+    transition: all 0.3s ease;
+
+} 
+h1 {
+    color: #ff6600;
+    font-size: 65px;
+    margin: 0;
+}
+h2 {
+    color: #ff6600;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+h3 {
+    color: #ffae0d;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+h4 {
+    color: #ffcc66;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+.titulo {
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 5px;
+    color:#ffc340;
+}
+.sub {
+    font-size: 16px;
+    color:#ffd970;
+}
+section{
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+.brasa {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.brasa h1 {
+    text-align: center;
+}
+img{
+    border-radius: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 200px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+img:hover {
+    transform: scale(1.2);
+    box-shadow: 0 8px 20px rgba(255, 165, 0, 0.6);
+}
+.logo {
+    width: 200px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin-bottom: 15px;
+}
+footer {
+    text-align: center;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 20px;   
+}
+div {
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.pratos {
+    text-align: right;
+}
+.acompanhamentos {
+    text-align: center;
+}
+.sanduíches {
+    text-align: right;
+}
+.bebidas {
+    text-align: left;
+}
+
+/* Layout para itens do cardápio com preço à direita */
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+}
+.menu-desc {
+    flex: 1 1 auto;
+}
+.menu-price {
+    flex: 0 0 auto;
+    color: #ffd970;
+    font-weight: 700;
+    font-size: 20px;
+    white-space: nowrap;
+}
+.descricao {
+    margin: 0;
+    color: #ffe5b4;
+    font-size: 18px;
+}
+
+@media (max-width: 600px) {
+    .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .menu-price {
+        margin-top: 6px;
+    }
+}
+
+/* Em seções que estão alinhadas à direita, mostrar o preço à esquerda */
+.pratos .menu-item,
+.sanduíches .menu-item {
+    flex-direction: row-reverse;
+}
+.pratos .menu-desc,
+.sanduíches .menu-desc {
+    text-align: right;
+}
+
+@media (max-width: 600px) {
+    .pratos .menu-item,
+    .sanduíches .menu-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .pratos .menu-desc,
+    .sanduíches .menu-desc {
+        text-align: left;
+    }
+}

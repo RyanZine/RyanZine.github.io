@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="BrasaViva" content="Restaurante especializado em grelhados e churrascos.">
+    
+    <link rel="stylesheet" href="brasa_viva.css">
+    <link rel="stylesheet" href="loader.css">
+    <title>Brasa Viva</title>
+</head>
+<body>
+    
+    <!--Header-->
+    <header> <a href="brasa_viva.html">
+        <img class="logo" src="BrasaViva/brasatransparente.png" alt="Logo Brasa Viva: brasas vermelhas formando o nome do restaurante especializado em grelhados" width="200"> <!--logo Brasa Viva-->
+    </a>
+    <!--menu-->
+        <section class="menu">
+        <nav>
+           <button> <a href="#cardapio">Cardápio</a> </button>
+          <button>  <a href="#contato">Contato</a> </button>
+                     <button> <a href="#sobre">Sobre Nós</a> </button>
+        </nav>
+    </section>
+    </header>
+    
+    <!--identidade-->
+    <section class="brasa" id="brasa">
+        <h1>Restaurante Brasa Viva</h1>
+        <p>Bem-vindo ao nosso restaurante! Oferecemos pratos deliciosos feitos com ingredientes frescos e de alta qualidade. Nossa missão é proporcionar uma experiência gastronômica inesquecível para nossos clientes.</p>
+                <p>O Brasa Viva é um restaurante especializado em grelhados e churrascos, fundado por apaixonados pela culinária ao fogo de lenha. Nossa equipe é dedicada a oferecer pratos saborosos e um ambiente acolhedor para nossos clientes.</p>
+        <p>Contamos com uma equipe de elite para que os pratos preparados saiam com qualidade e sabor da cozinha até sua mesa!</p>
+        <p> Venha conosco e experimente o verdadeiro sabor da brasa!</p>
+    </section>
+    <!--Cardápio-->
+    <section class="cardapio" id="cardapio">
+        <h1>Cardápio</h1>
+        <div class="Entradas">
+            <h3>Entradas</h3>
+        <ul>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Pão de Alho Flamejante</p>
+                        <p class="descricao">Pão artesanal tostado na brasa, recheado com manteiga de alho e ervas finas.</p>
+                    </div>
+                    <div class="menu-price" data-price="8.00"></div>
+                </div>
+                <img class="logo" src="BrasaViva/pao_de_alho.png" alt="Pão de alho artesanal tostado na brasa com manteiga derretida e ervas verdes frescas por cima, apresentado em fundo neutro" width= "200"> 
+            </li>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Linguiça Artesanal Defumada</p>
+                        <p class="descricao">Linguiça suculenta assada lentamente no carvão, servida com molho chimichurri da casa.</p>
+                    </div>
+                    <div class="menu-price" data-price="18.00"></div>
+                </div>
+                <img src="BrasaViva/linguiça_artesanal.png" alt="Linguiça artesanal defumada assada em carvão com aspectos de grelhadura, servida com molho chimichurri verde fresco ao lado" width="200">
+            </li>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Queijo Coalho ao Braseiro</p>
+                        <p class="descricao">Espetinhos de queijo coalho grelhados, finalizados com melaço de cana.</p>
+                    </div>
+                    <div class="menu-price" data-price="14.00"></div>
+                </div>
+                <img src="BrasaViva/queijo_coalho.png" alt="Espetinhos de queijo coalho grelhados em espetos, com cobertura dourada de melaço de cana brilhante" width="200">
+            </li>
+        </div>
+        <div class="pratos">
+            <h3>Pratos Principais</h3>
+        <ul class="carnes"> <h4>Carnes</h4>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Costela Brasa Viva</p>
+                        <p class="descricao">Costela bovina assada, extremamente macia, servida com farofa rústica e vinagrete.</p>
+                    </div>
+                    <div class="menu-price" data-price="89.00"></div>
+                </div>
+                <img src="BrasaViva/costela_brasa.png" alt="Costela bovina inteira assada com marcas de brasa escuras, acompanhada de farofa rústica e vinagrete vermelho" width="200">
+            </li>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Picanha Fogo Alto</p>
+                        <p class="descricao">Picanha premium grelhada na brasa, acompanhada do arroz biro-biro e batatas rústicas.</p>
+                    </div>
+                    <div class="menu-price" data-price="79.00"></div>
+                </div>
+                <img src="BrasaViva/picanha.png" alt="Fatias de picanha premium grelhada com crosta marrom escura e interior rosado, acompanhadas de arroz branco, batatas rústicas e molho" width="200">
+            </li>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Frango Caipira na Brasa</p>
+                        <p class="descricao">Frango dourado marinado em ervas e limão, grelhado com linhas de brasa evidentes.</p>
+                    </div>
+                    <div class="menu-price" data-price="45.00"></div>
+                </div>
+                <img src="BrasaViva/frango_caipira.png" alt="Peito de frango dourado marinado em ervas e limão, grelhado com linhas de brasa evidentes, ambiente caloroso transmitindo autenticidade" width="200">
+            </li>
+        </ul>
+        <ul class="Peixes"> <h4>Peixes</h4>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Salmão Grelhado</p>
+                        <p class="descricao">Filé de salmão grelhado, com toque defumado e crosta aromática.</p>
+                    </div>
+                    <div class="menu-price" data-price="65.00"></div>
+                </div>
+                <img src="BrasaViva/salmao.png" alt="Filé de salmão grelhado com crosta aromática escura, mostrando a textura levemente defumada e o interior cor-de-rosa" width="200">
+            </li>
+            <li>
+                <div class="menu-item">
+                    <div class="menu-desc">
+                        <p class="titulo">Tilápia do Rancho</p>
+                        <p class="descricao">Tilápia inteira assada na folha de bananeira, servida com purê de mandioquinha.</p>
+                    </div>
+                    <div class="menu-price" data-price="52.00"></div>
+                </div>
+                <img src="BrasaViva/tilapia.png" alt="Tilápia inteira assada na folha de bananeira verde, servida com purê amarelo de mandioquinha e ervas frescas" width="200"> 
+            </li>
+        </ul>
+        </div>
+            <div class="acompanhamentos">
+            <h3>Acompanhamentos</h3>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc"><p class="sub">Arroz Carreteiro</p></div>
+                        <div class="menu-price" data-price="12.00"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc"><p class="sub">Farofa de Manteiga na Chapa</p></div>
+                        <div class="menu-price" data-price="8.00"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc"><p class="sub">Legumes Grelhados</p></div>
+                        <div class="menu-price" data-price="10.00"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc"><p class="sub">Batata Rústica com Páprica Defumada</p></div>
+                        <div class="menu-price" data-price="12.00"></div>
+                    </div>
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc"><p class="sub">Feijão Tropeiro Brasa Viva</p></div>
+                        <div class="menu-price" data-price="10.00"></div>
+                    </div>
+                </li>
+        </ul>
+    </div>
+        <div class="sanduíches">
+            <h3>Sanduíches</h3>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc">
+                            <p class="titulo">Brasa Burger</p>
+                            <p class="descricao">Hambúrguer artesanal de carne bovina, queijo derretido, cebola caramelizada e molho especial.</p>
+                        </div>
+                        <div class="menu-price" data-price="28.00"></div>
+                    </div>
+                    <img src="BrasaViva/brasa_burger.png" alt="Hambúrguer artesanal de carne bovina com queijo derretido amarelo, cebola caramelizada marrom e molho especial, servido entre pão tostado" width="200">
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc">
+                            <p class="titulo">Choripán</p>
+                            <p class="descricao">Pão crocante, linguiça artesanal e chimichurri fresco.</p>
+                        </div>
+                        <div class="menu-price" data-price="22.00"></div>
+                    </div>
+                    <img src="BrasaViva/choripán.png" alt="Sanduíche com pão crocante contendo linguiça artesanal vermelha grelhada e chimichurri verde fresco, estilo argentino" width="200">
+                </li>
+            </ul>
+        </div>
+        <div class="Bebidas">
+            <h3>Bebidas</h3>
+            <ul>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc">
+                            <p class="titulo">Limonada Defumada</p>
+                            <p class="descricao">Limonada fresca com toque sutil de carvão ativado.</p>
+                        </div>
+                        <div class="menu-price" data-price="12.00"></div>
+                    </div>
+                    <img src="BrasaViva/limonada.png" alt="Copo alto com limonada fresca amarelo-clara contendo gelo, com um toque sutil de carvão ativado escuro, apresentando uma bebida refrescante e única" width="200">
+                </li>
+                <li>
+                    <div class="menu-item">
+                        <div class="menu-desc">
+                            <p class="titulo">Chopp Gelado Brasa Viva</p>
+                            <p class="descricao">Chopp artesanal servido na temperatura ideal.</p>
+                        </div>
+                        <div class="menu-price" data-price="10.00"></div>
+                    </div>
+                    <img src="BrasaViva/chopp.png" alt="Copo gelado contendo chopp artesanal espumante amarelo-dourado na temperatura ideal, com espuma branca espessa no topo" width="200">
+                </li>
+                <li>
+                    <p class="titulo">Sucos Naturais</p>
+                    <ul>
+                        <li>
+                            <div class="menu-item">
+                                <div class="menu-desc"><p class="descricao">Laranja</p></div>
+                                <div class="menu-price" data-price="8.00"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <div class="menu-desc"><p class="descricao">Abacaxi com Hortelã</p></div>
+                                <div class="menu-price" data-price="9.00"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <div class="menu-desc"><p class="descricao">Maracujá</p></div>
+                                <div class="menu-price" data-price="9.00"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <div class="menu-desc"><p class="descricao">Melancia</p></div>
+                                <div class="menu-price" data-price="8.00"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+            <div class="sobremesas">
+                <h3>Sobremesas</h3>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-desc">
+                                <p class="titulo">Abacaxi Caramelizado</p>
+                                <p class="descricao">Abacaxi grelhado com calda de mel e canela, servido com sorvete de creme.</p>
+                            </div>
+                            <div class="menu-price" data-price="16.00"></div>
+                        </div>
+                        <img src="BrasaViva/abacaxi.png" alt="Fatia de abacaxi grelhada com calda de mel caramelizada dourada e canela em pó, servida com bola de sorvete de creme branco encima" width="200">
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-desc">
+                                <p class="titulo">Banana Caramelizada</p>
+                                <p class="descricao">Banana grelhada com açucar mascavo e canela.</p>
+                            </div>
+                            <div class="menu-price" data-price="14.00"></div>
+                        </div>
+                        <img src="BrasaViva/banana.png" alt="Banana Flamejada" width="200">
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <div class="menu-desc">
+                                <p class="titulo">Pudim da Casa</p>
+                                <p class="descricao">Cremoso, tradicional e irresistivel.</p>
+                            </div>
+                            <div class="menu-price" data-price="12.00"></div>
+                        </div>
+                        <img src="BrasaViva/pudim.png" alt="Pudim da Casa" width="200">
+                    </li>
+                </ul>
+            </div>
+    </section>
+    <!--Sobre Nós-->
+    <section class="sobre" id="sobre">
+        <h1>Quem Somos</h1>
+<p>O Brasa Viva é uma casa gastronômica dedicada à culinária de fogo, fundada sobre os princípios da tradição, da autenticidade e do respeito ao preparo artesanal. Nossa proposta nasce da valorização do fogo como elemento central da cozinha brasileira, capaz de transformar ingredientes simples em experiências sensoriais marcantes.</p>
+
+<h2>Nossa História</h2>
+
+<p>A origem do Brasa Viva remonta a reuniões familiares e encontros informais em que o churrasco, preparado de forma lenta e cuidadosa, se tornou símbolo de convivência e celebração. Com o tempo, essa prática evoluiu para um propósito maior: criar um espaço onde a essência da brasa fosse preservada e elevada a um padrão gastronômico de excelência.</p>
+
+<p>Inspirados por essa tradição, os fundadores estruturaram o Brasa Viva como uma marca comprometida com a qualidade, o sabor e a experiência. A partir de técnicas aprimoradas, seleção criteriosa de ingredientes e dedicação ao preparo artesanal, o Brasa Viva consolidou sua identidade como referência em culinária de fogo.</p>
+
+<h2>Nossa Filosofia</h2>
+
+<p>O Brasa Viva acredita que cozinhar é um ato de cuidado. Por isso, cada prato é elaborado com atenção ao tempo, ao calor e às características naturais de cada ingrediente. A brasa é tratada como protagonista, e não apenas como método de cocção.</p>
+
+<h2>Compromisso</h2>
+<ul>
+    <li><p><strong>Excelência gastronômica:</strong> cortes selecionados, acompanhamentos tradicionais e sobremesas com assinatura própria.</p></li>  
+    <li><p><strong>Autenticidade:</strong> respeito às raízes da culinária brasileira e ao preparo artesanal.</p></li>  
+    <li><p><strong>Hospitalidade:</strong> ambiente acolhedor e atendimento pautado pela cordialidade.</p></li>
+    <li><p><strong>Sustentabilidade:</strong>valorização de fornecedores locais e práticas responsáveis.</p></li>
+</ul>
+<h2>Nossa Essência</h2>
+<p>O Brasa Viva representa a união entre tradição e técnica, simplicidade e sofisticação, memória afetiva e inovação. Cada detalhe — do preparo ao serviço — reflete o compromisso de oferecer uma experiência gastronômica que honra o sabor que nasce do fogo.</p>
+    </section>
+    <!--Contato-->
+    <section class="contato" id="contato">
+        <h1>Contato</h1>
+        <p>Endereço: Rua das Chamas, 123 - Cidade do Fogo</p>
+        <p></p>(11) 98765-4321 | Email:brasavivarest@gmail.com</p>
+    </section>
+    <!--Footer-->
+    <footer>
+        <p>&copy; <time>2026</time> Brasa Viva. Todos os direitos reservados.</p>
+    
+  
+</body>
+<script src="loader.js"></script>
+<script>
+// Formata preços a partir de data-price usando Intl.NumberFormat pt-BR
+(function () {
+    const fmt = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' });
+    const nodes = document.querySelectorAll('.menu-price');
+    nodes.forEach(el => {
+        const raw = el.getAttribute('data-price');
+        if (raw) {
+            const n = Number(raw);
+            if (!isNaN(n)) el.textContent = fmt.format(n);
+        } else {
+            // tentar extrair número do texto existente
+            const txt = (el.textContent || '').replace(/[^0-9,.-]/g, '').replace(',', '.');
+            const n = Number(txt);
+            if (!isNaN(n)) el.textContent = fmt.format(n);
+        }
+    });
+})();
+</script>
+</html>
